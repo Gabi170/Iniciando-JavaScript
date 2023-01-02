@@ -1,0 +1,35 @@
+body{
+    font: normal 15pt Arial;
+    background: linear-gradient(306deg, rgb(131, 255, 100), rgb(87, 84, 255), rgb(255, 149, 145));
+}
+
+header{
+    text-align: center;
+    padding: 10px;
+    color: cornsilk;
+}
+
+section{
+  background-color: rgb(236, 226, 231);
+  border-radius: 15pt;
+  padding: 15px;
+  width: 500px;
+  margin: auto;
+  box-shadow: 5px 5px 10px rgba(73, 73, 73, 0.486);
+}
+
+input{
+    border-radius: 7px;
+    border-color: rgba(193, 127, 255, 0.815);
+    background-color: rgba(255, 190, 166, 0.281);
+    color: rgb(255, 255, 255);
+    font: normal 15px Verdana;
+    padding: 4px;
+}
+
+
+footer{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+}

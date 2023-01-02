@@ -1,0 +1,35 @@
+body{
+    font: normal 10pt Arial;
+    background: rgb(255, 200, 148);
+}
+
+header{
+    text-align: center;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
+
+section{
+  background-color: rgb(255, 255, 255);
+  border-radius: 15pt;
+  padding: 15px;
+  width: 500px;
+  margin: auto;
+  box-shadow: 5px 5px 10px rgba(73, 73, 73, 0.356);
+}
+
+#msg{
+    font: normal 17pt Arial;
+    text-align: center;
+}
+
+div{
+    padding: 15px;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+}

@@ -1,0 +1,26 @@
+body{
+    font: normal 15pt Arial;
+    background: rgb(255, 200, 148);
+    background: linear-gradient(306deg, rgb(223, 255, 147) 0%, rgb(255, 227, 103) 35%, rgb(255, 149, 145) 100%);
+}
+
+header{
+    text-align: center;
+    padding: 10px;
+    color: cornsilk;
+}
+
+section{
+  background-color: rgb(255, 234, 244);
+  border-radius: 15pt;
+  padding: 15px;
+  width: 500px;
+  margin: auto;
+  box-shadow: 5px 5px 10px rgba(73, 73, 73, 0.356);
+}
+
+footer{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+}
