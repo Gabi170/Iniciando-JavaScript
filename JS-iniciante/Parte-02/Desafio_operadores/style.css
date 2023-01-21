@@ -1,0 +1,37 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(160deg, rgb(156, 46, 129), rgb(186, 91, 91));
+    display: flex;
+    justify-content: center;
+}
+
+#principal{
+    background: rgb(255, 225, 225);
+    border: none;
+    border-radius: 15px;
+    margin-top: 100px;
+    padding: 10px;
+    text-align: center;
+    height: 400px;
+    width: 500px;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+input{
+    border: none;
+    margin: 7px;
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#butam {
+    margin: 5px;
+    padding: 5px 10px;
+    border: none;
+    background: rgb(247, 182, 97);
+    color: rgb(255, 255, 255);
+}

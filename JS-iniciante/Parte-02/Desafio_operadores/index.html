@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cálculo</title>
+</head>
+<body>
+
+    <div id="principal">
+
+        <header>
+            <h1>Cálculo do índice de massa corporal</h1>
+        </header>
+        
+        <form>
+
+            Name
+           <input type="text" name="name" id="name" placeholder="Digite seu nome">
+           
+           <br>
+
+           Altura
+           <input type="number" name="altura" id="altura" placeholder="Digite sua altura em cm">
+
+           <br>
+
+           Peso
+           <input type="number" name="peso" id="peso" placeholder="Digite seu peso em Kg">
+
+           <br>
+
+           <input type="button" value="Enviar" id="butam" onclick="verificar()">
+        </form>
+
+        <div id="resultado">
+
+        </div>
+
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
