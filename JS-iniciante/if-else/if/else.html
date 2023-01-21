@@ -9,12 +9,15 @@
     <script>
 
         var nota = prompt('Insira uma nota')
-        var media = 7
+        var falta = prompt('Insira o número de faltas')
 
-        if(nota >= media){
+        var media = 7
+        var falta_max = 14
+
+        if(nota >= media && falta <= falta_max){
             document.write("Aprovado")
         }
-        else if (nota >=4){
+        else if (nota >=4 && falta >= 7){
             document.write("Recuperação")
         }
         else{
