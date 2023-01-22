@@ -1,0 +1,39 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(190deg, rgb(255, 255, 73), rgb(255, 150, 58));
+    display: flex;
+    justify-content: center;
+}
+
+#fundo{
+    background: rgb(255, 245, 226);
+    border-radius: 25px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 100px;
+    height: 400px;
+    width: 500px;
+}
+h1{
+    text-transform: uppercase;
+}
+
+input{
+    border: none;
+    margin: 7px;
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#butam {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    background: rgb(251, 70, 70);
+    color: rgb(255, 255, 255);
+}
+
+input#operacao{
+    margin-left: 62px;
+}
