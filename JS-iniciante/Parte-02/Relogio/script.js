@@ -1,15 +1,23 @@
-var horas = document.querySelector('div#horas')
-var h = new Date()
-var oras = h.getHours()
+var horas = document.querySelector('span#horas')
+var minutos = document.querySelector('span#minutos')
+var segundos = document.querySelector('span#segundos')
 
-var minutos = document.querySelector('div#minutos')
-var m = new Date()
-var min = m.getMinutes()
 
-var segundos = document.querySelector('div#segundos')
-var s = new Date()
-var seg = s.getSeconds()
+const relogio = setInterval(function time() {
+  let dateToday = new Date()
+    var h = dateToday.getHours()
+    var m = dateToday.getMinutes()
+    var s = dateToday.getSeconds()
 
-horas.innerHTML = oras
-minutos.innerHTML = min
-segundos.innerHTML = seg
+    if(h < 10){h = '0' + h}
+
+    if(m < 10){m = '0' + m}
+
+    if(s < 10){s = '0' + s}
+
+    horas.innerHTML = h
+    minutos.innerHTML = m
+    segundos.innerHTML = s
+
+})
+
