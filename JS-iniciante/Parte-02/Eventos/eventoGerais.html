@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        div{
+            flex-direction: row;
+            margin-right: 70px;
+            padding: 25px;
+            margin-bottom: 25px;
+            text-align: center;
+            background: rgb(106, 86, 205);
+            height: 250px;
+            width: 250px;
+        }
+        input{
+            margin-top: 15px;
+            border: none;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div onclick="acao()">
+        <p>ondblclick</p>
+        <p>onmouseup</p>
+        <p>onmouseover</p>
+        <p>onmouseout</p>
+        <p>São os tipos que podemos
+           usar</p>
+    </div>
+
+    <br>
+
+    <div >
+        <input onkeypress="acao1()" type="text" name="text" id="text" placeholder="Coloque qualquer letra">
+        <p>onkeydown</p>
+        <p>onkeyup</p>
+        <p>São os tipo de teclado que podemos usar</p>
+    </div>
+
+    <div onresize="acao2()">
+        <p>onscroll</p>
+        <p>Tipos para mexer na tela em geral</p>
+    </div>
+
+    <div>
+        <input placeholder="Digite algo" type="text" name="id" id="id" onfocus="focus()">
+
+        <select onchange="console.log('Estado modificado')" name="sel" id="sel" onchange="console.log('recebeu foco')">
+        <option >>>>>Selecione<<<<</option>
+        <option value="1">Primeira opção</option>
+        <option value="2">Segunda opção</option>
+        </select>
+    </div>
+
+
+    
+    <script>
+        function acao(){
+           alert('Alerta por click')
+        }
+
+        function acao1(){
+            alert('Funciona')
+        }
+
+        function acao2(){
+    
+        }
+
+    </script>
+</body>
+</html>
