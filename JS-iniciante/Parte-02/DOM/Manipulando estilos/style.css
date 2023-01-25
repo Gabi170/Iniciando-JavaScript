@@ -1,0 +1,54 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: linear-gradient(190deg, rgb(194, 255, 175), rgb(171, 171, 255));
+    display: flex;
+    justify-content: flex-end;
+}
+
+#botoes{
+    margin-left: 25%;
+}
+
+input{
+    border: none;
+    border-radius: 15px;
+    margin-top: 4%;
+    padding: 20px;
+    font-size: 10;
+    cursor: pointer;
+}
+
+.red{
+    background-color: rgb(255, 117, 117);
+    margin-right: 5%;
+    margin-left: -10%;
+}
+
+.grem{
+    background: rgb(137, 255, 126);
+    margin-right: 7%;
+    margin-left: 10%;
+}
+
+.blue{
+    background: rgb(137, 137, 252);
+    margin-left: 10%;
+}
+
+.linha{
+    margin-top: 10px;
+    height: 1px;
+    width: 900px;
+    background: rgb(0, 16, 81);
+    margin-right: 240px;
+    margin-top: 40px;
+}
+
+#caixa{
+    border: none;
+    border-radius: 50px;
+    margin-top: 30px;
+    width: 500px;
+    height: 400px;
+    margin-left: 200px;
+}
