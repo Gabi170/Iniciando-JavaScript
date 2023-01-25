@@ -1,0 +1,24 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(150deg, rgb(64, 0, 85), blue);
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+h1{
+    font-size: 55px;
+}
+
+span, input{
+    border-radius: 10px;
+    margin-top: 55px;
+    font-size: 20px;
+    border: none;
+}
+
+span{
+    font-size: 25px;
+}
+
