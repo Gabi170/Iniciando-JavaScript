@@ -1,0 +1,30 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    background: linear-gradient(190deg, rgb(160, 255, 136), rgb(255, 0, 208));
+}
+
+#principal{
+    background: rgb(255, 225, 193);
+    width: 700px;
+    height: 250px;
+    padding-top: 50px;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 25px 25px rgba(0, 0, 0, 0.824);
+    margin-top: 200px;
+    margin-left: 320px;
+    overflow: hidden;
+}
+
+input{
+    font-size: 17px;
+    border: none;
+    background: white;
+    border-radius: 5px;
+}
+
+#digitar{
+    margin-bottom: 55px;
+}
+
