@@ -1,0 +1,35 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(150deg, rgb(121, 255, 126), rgb(118, 255, 250));
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+div#principal{
+    margin-top: 150px;
+    text-align: center;
+    background-color: rgb(56, 162, 255);
+    border-radius: 25px;
+    box-shadow: 25px 25px rgba(0, 0, 0, 0.823);
+    color: white;
+    height: 400px;
+    width: 500px;
+}
+
+header{
+    margin-top: 100px;
+}
+
+input{
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.ad, .or{
+    background: rgb(92, 255, 149);
+    padding: 10px;
+    margin-left: 10px;
+}
