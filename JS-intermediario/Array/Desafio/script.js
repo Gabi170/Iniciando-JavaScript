@@ -24,5 +24,5 @@ function ordernar(){
     objetos.short(adicionar())
     console.log(objeto.short(adicionar()))
 
-    res.innerHTML = `${objeto.short(adicionar())}`
+    res.innerHTML = `${objeto}`
 }
