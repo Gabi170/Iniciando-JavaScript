@@ -7,7 +7,7 @@ lista_frutas[3] = 'Uva'
 
 var y = 0
 
-while(y > lista_frutas.length){
+while(y < lista_frutas.length){
     console.log(lista_frutas[y])
     y++
 }
