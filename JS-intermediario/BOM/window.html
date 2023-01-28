@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM window</title>
+    <script>
+        var janela
+
+        function AbriJanela(){
+            janela = document.open('https://www.google.com.br', 'Nova_janela', 'width=500', 'height=500')
+        }
+        function FechaJanela(){
+            janela.close()
+        }
+
+    </script>
+</head>
+<body>
+
+    <input type="submit" value="Abir janela" onclick="AbriJanela()">
+    <input type="button" value="Fechar Janela" onclick="FechaJanela()">
+    <input type="button" value="Imprimir" onclick="window.print()">
+</body>
+</html>
