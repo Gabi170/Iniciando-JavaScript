@@ -2,6 +2,21 @@ var altura = 0
 var largura = 0
 var vidas = 1
 var tempo = 11
+var criaMosquitoTempo = 1500
+
+var nivel = document.location.search
+nivel = nivel.replace('?' , '')
+
+if(nivel === normal){
+
+    criaMosquitoTempo
+}else if(nivel === dificil){
+
+    criaMosquitoTempo = 1000
+}else if(nivel === chucknorris){
+
+    criaMosquitoTempo = 750
+}
 
 function tamanhoAleatorio(){
     var classe = Math.floor(Math.random() * 3)
