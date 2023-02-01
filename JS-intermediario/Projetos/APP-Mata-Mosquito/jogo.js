@@ -7,13 +7,13 @@ var criaMosquitoTempo = 1500
 var nivel = document.location.search
 nivel = nivel.replace('?' , '')
 
-if(nivel === normal){
+if(nivel === 'normal'){
 
-    criaMosquitoTempo
-}else if(nivel === dificil){
+    criaMosquitoTempo = 1500
+}else if(nivel === 'dificil'){
 
     criaMosquitoTempo = 1000
-}else if(nivel === chucknorris){
+}else if(nivel === 'chucknorris'){
 
     criaMosquitoTempo = 750
 }
