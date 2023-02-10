@@ -77,12 +77,12 @@ let valor = document.getElementById('valor')
 let descricao = document.getElementById('descricao')
 
 let despesa = new Despesa(
-    ano.value,
-    mes.value, 
-    dia.value, 
-    tipo.value, 
-    valor.value, 
-    descricao.value
+        ano.value,
+        mes.value, 
+        dia.value, 
+        tipo.value, 
+        valor.value, 
+        descricao.value
     )
 
     if(despesa.validarDados()){
@@ -96,6 +96,12 @@ let despesa = new Despesa(
         document.getElementById('buttam').innerHTML = 'Voltar'
         document.getElementById('buttam').className = 'btn btn-success'
         document.getElementById('title').className = 'modal-header text-success'
+        ano.value = ''
+        mes.value = '' 
+        dia.value = '' 
+        tipo.value = '' 
+        valor.value = ''
+        descricao.value = ''
     }
     else{
     //dialog de erro  
@@ -106,6 +112,7 @@ let despesa = new Despesa(
       document.getElementById('buttam').innerHTML = 'Voltar e corrigir'  
       document.getElementById('buttam').className = 'btn btn-danger'  
       document.getElementById('title').className = 'modal-header text-danger'
+      
     }
 }
 
@@ -115,7 +122,55 @@ function carregaListaDespesa(){
 
     despesas = bd.recuperarTodosRegistros()
 
-    console.log(despesas)
+    let listaDespesas = document.querySelector('tbody#listaDespesas')
+
+    despesas.forEach(function(d) {
+        
+        console.log(despesas)
+
+        let linha = listaDespesas.insertRow()
+
+        linha.insertCell(0).innerHTML = `${d.dia}/${d.mes}/${d.ano}`
+        
+        switch(d.tipo){
+
+            case '1': d.tipo = 'Alimentação'
+                break
+
+            case '2': d.tipo = 'Educação'
+                break    
+
+            case '3': d.tipo = 'Lazer'
+                break
+
+            case '4': d.tipo = 'Saúde'
+                break
+
+            case '5': d.tipo = 'Transporte'
+                break
+        }
+
+        linha.insertCell(1).innerHTML = d.tipo
+        linha.insertCell(2).innerHTML = d.descricao
+        linha.insertCell(3).innerHTML = d.valor
+    });
+
+    
+}
+
+function pesquisarDespesa(){
+
+    let ano = document.getElementById('ano').value
+    let mes = document.getElementById('mes').value
+    let dia = document.getElementById('dia').value
+    let tipo = document.getElementById('tipo').value
+    let valor = document.getElementById('valor').value
+    let descricao = document.getElementById('descricao').value
+
+    let despesa = new Despesa(ano, mes, dia, tipo, valor, descricao)
+
+    console.log(despesa)
+
 }
 
 
