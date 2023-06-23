@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(() => {
+
+            console.log('conteudo div1 :', $('#div1').html())
+
+            console.log('conteudo div 2: ', $('#div2').html())
+
+        })
+    </script>
+</head>
+
+<body>
+   
+    <div id="div1" style="border:solid 1px #000; width: 150px; height:150px; background-color: rgba(22, 180, 7, 0.548);">
+      <a href="#">Teste</a>
+      <p>Esse e um ponto</p>
+      ta funconando
+      <div>Continuo aqui</div>
+    </div>
+
+    <div id="div2" style="border:solid 1px #000; width: 150px; height:150px; background-color: rgba(45, 67, 190, 0.548);">
+        Ponto 2
+    </div>
+
+</body>
+
+</html>
