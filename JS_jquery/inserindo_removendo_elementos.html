@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro teste do Jquery</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+       
+       $(document).ready(() => {
+
+        $('#lista1').prepend('<li>Item 0</li>')
+        $('#lista1').append('<li>Item 4</li>')
+
+        $('#lista2').before('<div>Inserido depois</div>')
+        $('#lista2').after('<div>Inserido depois</div>')
+
+        $('.remove').remove()
+
+       })
+
+    </script>
+</head>
+
+<body>
+    
+    <ul id="lista1">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li class="remove">Item 3</li>
+    </ul>
+
+    <div id="lista2">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+    </div>
+
+</body>
+
+</html>
